@@ -33,6 +33,9 @@
   text-align: center;
   flex-direction:column
 }
+button{
+  border: .2rem solid white;
+}
 
 /* .card-img-overlay{
   height: 10rem;
