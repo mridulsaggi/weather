@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>hello weather</title>
+  <link rel="stylesheet" href="index.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Geologica&family=Lobster&family=Satisfy&display=swap');
+      </style>
+</head>
+
+<body>
+  <!-- <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">about</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">explore</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+  </nav> -->
+
+  <!-- card for weather -->
+  <div class="container mainly">
+
+
+    <div class="searchbox">
+      <div class="Card">
+        <div class="CardInner">
+          <!-- <label>Search for your favourite food</label> -->
+          <div class="container d-flex">
+            <button id="submit" >
+            <div class="Icon">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                stroke="#657789" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                class="feather feather-search">
+                <circle cx="11" cy="11" r="8" />
+                <line x1="21" y1="21" x2="16.65" y2="16.65" />
+              </svg>
+            </div>
+          </button>
+            <div class="InputContainer">
+              <input type="text" id="inpcity" placeholder="ENTER THE CITY" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- niche ka -->
+
+    <div class="card text-bg-dark">
+      <img src="./cardbg.jpg" class="card-img" alt="...">
+      <div class="card-img-overlay cardinner d-flex ">
+        <div class="topp d-flex">
+        <div class="card-title m-5" id="cityname">TEMP</div>
+        <img src="./celsius (1).png" alt="" id="type">
+        </div>
+        <div class="cardinside d-flex">
+          <div class="row ">
+            <div class="names col">
+              <span class="data">temp <span class="value tempi" id="temp">23</span><img class="cel" src="./celsius (1).png" alt=""></span>
+            </div>
+            <div class="names col">
+              <span class="data">weather <span class="value " id="wind">30km/hr</span></span>
+            </div>
+          </div>
+
+          <div class="row ">
+            <div class="names col">
+              <span class="data">humidity <span class="value " id="humidity">6:00am</span></span></span>
+            </div>
+            <div class="names col">
+              <span class="data">feels like <span class="value "  id="feelslike">7:15pm</span></span></span>
+            </div>
+          </div>
+          <div class="row ">
+            <div class="names col">
+              <span class="data">region <span class="value " id="region">delhi</span></span></span>
+            </div>
+            <div class="names col">
+              <span class="data">country <span class="value "  id="country">india</span></span></span>
+            </div>
+          </div>
+        </div>
+        <!--          
+          <div class="namedata col">
+            <span class="temp">temnp</span>
+            <span class="wind">wind</span>
+            <span class="sunrise">sunrise</span>
+            <span class="sunset">sunset</span>
+          </div> -->
+      </div>
+
+    </div>
+
+
+
+    
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
